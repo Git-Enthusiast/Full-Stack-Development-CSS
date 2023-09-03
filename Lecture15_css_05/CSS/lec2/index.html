@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(109, 109, 33);
+            position: relative;
+            height: 8000px;
+            border: red dashed 2px;
+
+        }
+        img{
+            margin: 10px;
+            border: 2px solid red;
+            padding: 5px;
+        }
+          
+        .class2{
+            /* position: static; you can not change postion of element if position is static.
+            position: relative;
+            top: 100px;
+            left: 100px; */
+            position:absolute;
+            /* top: 209px;
+            left: 200px; */
+
+        }
+        .class3{
+            position: sticky;
+            top: 100px;
+        }
+        .class4{
+            position: fixed;
+        }
+        .box{
+            height: 5000px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="class1" src="download (1).jpg" alt="web development" height="300px" width="300px">
+        <img class="class2" src="download (2).jpg" alt="web development" height="300px" width="300px">
+        <img class="class3" src="download.jpg" alt="web development" height="300px" width="300px">
+        <img class="class4" src="OIP.jpg" alt="web development"height="300px" width="300px">
+
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>

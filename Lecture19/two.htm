@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with Flex</title>
+    <style>
+        .container{
+            border: solid black 2px;
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            padding: 2px;
+            margin: 10px;
+        }
+        #boxleft{
+            background-color: aquamarine;
+            border: solid rgb(2, 82, 5) 2px;
+            margin: 3px;
+            padding: 2px;
+            width: 47%;
+            display: flex;
+            flex-direction: column;
+        }
+           
+        #boxright{
+            background-color: yellow;
+            border: solid rgb(54, 5, 216) 2px;
+            margin: 3px;
+            padding: 2px;
+            width: 47%;
+        }
+        p{
+            border: solid rgb(116, 7, 7) 2px;
+        }
+        img{
+            width: 370px;
+        }
+        @media(max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>Text 1</p>
+            <p>Text 2</p>
+        </div>
+        <div id="boxright">
+            <img src="IPL21M8_55.webp" alt="MSD">
+        </div>
+    </div>
+    
+</body>
+</html>

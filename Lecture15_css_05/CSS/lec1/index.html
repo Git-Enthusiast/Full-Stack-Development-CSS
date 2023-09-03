@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 200px;
+            border: solid blue 2px;
+            border-radius: 5px;
+        }
+        span{
+            border: dashed red  5px;
+            height:  400px;
+            width: 800px;
+            /* custom width and height can not be applied  for inline element as span tag is */
+            padding: 10px;
+            margin: 20px;
+            display: block;
+
+        }
+        span{
+            display: inline-block;
+            height:  400px;
+            width: 800px;
+            margin: 200px;
+           padding: 0px;
+            /* inline-block means inline with custom margin and width and height  */
+            
+        }
+        .box1{
+            border: solid, red, 5px;
+            /* box-sizing: border-box; */
+            height: 400px;
+            width: 400px;
+            margin: 20px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Welcome to codehelp
+    </div>
+    <span>
+        this is love babbar
+
+    </span>
+    <span>
+        This is love babbar 2.0
+    </span>
+    <div class="box1">Here to learn Box Model</div>
+</body>
+</html>

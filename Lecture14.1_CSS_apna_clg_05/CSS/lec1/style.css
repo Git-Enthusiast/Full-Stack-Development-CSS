@@ -1,0 +1,68 @@
+h1{
+    background-color: aquamarine;
+    color:  rgb(142, 165, 234) ;
+    border-radius: 10px;
+    border: solid yellow 5px;
+    text-align: center;
+}
+.firstclass{
+    background-color: bisque;
+    color: rgb(81, 20, 139);
+    border-radius: 10px;
+    border: solid rgb(76, 51, 4) 5px;
+}
+.secondclass{
+    background-color: cyan;
+    color: rgb(52, 3, 52);
+    border-radius: 10px;
+    border: solid rgb(76, 51, 4) 5px;
+}
+.thirdclass{
+    background-color: rgb(130, 250, 138);
+    color: rgb(168, 10, 10);
+    border-radius: 10px;
+    border: solid rgb(228, 164, 46) 5px;
+    
+}
+button{
+    background-color: rgb(192, 27, 112);
+}
+input{
+    background-color: rgb(149, 134, 177);
+}
+body{
+    font-style: italic;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    background-color: rgb(195, 129, 23);
+    color: blur;
+    text-align: left;
+}
+#id{
+    font-size: 25px;
+    font-style: inherit;
+    background-color: antiquewhite;
+    
+}
+*{
+    background-image: unset;
+}
+h2{
+    text-decoration: red wavy underline;
+}
+#secondid{
+    text-decoration: brown line-through;
+}
+#thirdid{
+    text-decoration: rgb(138, 26, 130) underline dashed ;
+}
+#fifthid{
+    text-transform: uppercase;
+    text-transform: none;
+    text-transform: capitalize;
+    text-transform: lowercase;
+} 
+#id{
+    background-color: #dd98aa;
+}

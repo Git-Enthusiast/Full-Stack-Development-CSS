@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size in CSS</title>
+    <style>
+        .box{
+            border: red dashed 2px;
+            width: 50%;
+        }
+          .parent{
+            background-color: aqua;
+            border: red solid 2px;
+            width: 50%;
+            /* here width is 50% of of parent's immediate ancestor which is body tag  */
+        }
+        .child{
+            background-color: rgb(0, 255, 26);
+            border: rgb(221, 191, 23) solid 2px;
+            width: 30%;
+            /* here width is 30% of of parent's immediate ancestor which is parent element  */
+        }  
+        /* *{
+            margin: 0px;
+            padding: 0px;
+        } */
+        .container{
+            background-color: blanchedalmond;
+            border: red solid 2px;
+            height: 100vh;
+             /* vh --> specifies view height in browser. */
+             /* vw --> specifies view width in browser. */
+
+            width: 50vw;
+        }
+        .name{
+            border: 2px solid black;
+            font-size: 100px;
+        }
+        .parent1{
+            font-size: 10px;
+        }
+        .child1{
+            font-size: 10em;
+        }
+        .rem{
+            font-size: 5rem;
+            /* 5 times the size of root element that is body tag which has default size is 16 px  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Welcome to codehelp!</div>
+    <div class="parent">
+        <div class="child">Child</div>
+    </div>
+    <div class="container">
+        Welcome to codehelp!
+    </div>
+    <div class="name">Rajan Raj</div>
+    <div class="parent1">Hello ji <div class="child1">Hi this is rajan</div></div>
+    <p class="rem">hi this is rajan </p>
+</body>
+</html>
