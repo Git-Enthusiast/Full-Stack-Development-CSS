@@ -1,8 +1,24 @@
+/* https://tailwindcolor.com/      is a color pallet to choose good colour. */
+*{
+    font-size: 16px;
+ }
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+h1{color: #222222; font-size: 2.5rem;}
+h2{color: #222222; font-size: 2rem;}
+h3{color: #222222; font-size: 1.75rem;}
+h4{color: #222222; font-size: 1.5rem;}
+h5{color: #222222; font-size: 1.25rem;}
+h6{color: #222222; font-size:  1rem;}
 #navbar{
     margin: 8px 16px;
     padding: 2px;
@@ -20,6 +36,7 @@ h1{
     text-align: center;
     margin: 24px 0 0 25px;
     
+    
 }
 #about{
     margin:15px auto 0 auto;
@@ -31,8 +48,9 @@ h1{
 
 }
 #description{
-    padding: 0 5px 0 0;
+    padding: 0 8px 0 0;
     width: 50%;
+    font-size: 1.25rem;
 }
 #team{
     width: 50%;
@@ -49,21 +67,81 @@ h2{
     margin: 0 auto;
     max-width: 800px;
 }
-.location{
-    color: gray;
+#job-table{
+    width: 100%;
+    border: solid gray 1px;
+     border-collapse: collapse;
 }
-
+.job-table-head th{
+    padding: 8px;
+    border: solid gray 1px;
+    background-color: #BFDBFE;
+    text-align: center;
+    color: #222222;
+}
+.job-table-body td{
+    padding: 8px;
+    border: solid rgb(96, 20, 20) 1px;
+    text-align: left;
+    color: #444444;
+}
+#job-table tr:nth-child(odd){
+    background-color: #EFF6FF;
+}
+#application-form{
+    margin:0 auto;
+    padding:0 auto;
+    max-width: 800px;
+}
+#application-form label {
+    font-weight: bold;
+}
+#application-form input{
+    padding: 8px;
+}
+.form-group{
+    margin: 16px,0;
+}
+.form-group input,textarea,select{
+    font-size: 1.25rem;
+    padding: 8px;
+    margin-top: 4px;
+    min-width: 360px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.form-group textarea{
+    width: 100%;
+    font-family: 'Roboto',sans-serif;
+}
+.form-group input[type ="checkbox"]{
+    width: 16px;
+    height: 16px;
+    min-width: 0;
+}
+#application-form input[type = "submit"]{
+    background-color: #60A5FA;
+    width: 120px;
+    min-width: 0;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
 #footer{
     margin-top: 32px;
     padding: 16px;
-    background-color: #eee;
+    background-color: #F3F4F6;
     text-align: center;
+    width: 100%;
 }
 #footer_links{
     list-style: none;
 }
 #copyright{
     color: gray;
+    font-size: .875rem;
 }
 #footer_links li{
     display: inline;
@@ -71,4 +149,8 @@ h2{
 }
 a{
     text-decoration: none;
+    color: #38BDF8;
+}
+a:hover,a:focus{
+    color: #1E40AF;
 }

@@ -6,7 +6,9 @@
     <title>Webpages</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="navbar"><img src="jovian_logo.svg" alt="Navbar" id="nav_image"></div>
@@ -28,21 +30,110 @@
     </div>
     <h2>Job Opportunities</h2>
     <div id="jobs">
-        <div>
-            <a   style="float: right;" target="_blank" href="mailto:messachuate@gmail.com?subject=Frontend">Apply</a>
-            <h3>Frontend Developer</h3>
-            <span class="location">Bengaluru,India</span>
-        </div>
-        <div>
-            <a   style="float: right;" target="_blank" href="mailto:messachuate@gmail.com?subject=Backend">Apply</a>
-            <h3>Backend Developer</h3>
-            <span class="location">Delhi,India</span>
-        </div>
-        <div>
-            <a   style="float: right;" target="_blank" href="mailto:messachuate@gmail.com?subject=Data Scientist">Apply</a>
-            <h3>Data Scientist</h3>
-            <span class="location">Mumbai,India</span>
-        </div>
+        <table id="job-table">
+            <thead >
+                <tr class="job-table-head">
+                    <th rowspan="2">Job Title</th>
+                    <th colspan="2">Location</th>
+                    <th rowspan="2">Salary</th>
+                    <th rowspan="2">Posted On</th>
+                </tr>
+                <tr class="job-table-head">
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="job-table-body">
+                    <td>Frontend Developer</td>
+                    <td>Bengaluru</td>
+                    <td>India</td>
+                    <td>₹12,00,000</td>
+                    <td>Mar 3,2023</td>
+                </tr>
+                <tr  class="job-table-body">
+                    <td>Full Stack Developer</td>
+                    <td>New Delhi</td>
+                    <td>India</td>
+                    <td>₹15,00,000</td>
+                    <td>Feb 1,2023</td>
+                </tr>
+                <tr  class="job-table-body">
+                    <td>Data Scientist</td>
+                    <td>San Francisco</td>
+                    <td>USA</td>
+                    <td>$175,000</td>
+                    <td>Dec 22,2022</td>
+                </tr>
+                <tr  class="job-table-body">
+                    <td>Ml Engineer</td>
+                    <td colspan="2">Remote</td>
+                    <td>$80,000</td>
+                    <td>Sep 19,2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="application-submittion">
+        <h2>Submit Your Application</h2>
+        <form 
+            id="application-form" 
+            action="https://formbold.com/s/oWqEJ"
+            method="POST"
+            enctype="multipart/form-data" >
+            <div class="form-group">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="Full Name" required placeholder="Rajan Raj">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="Email Address" required placeholder="messachuate@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+919608757113">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position Applied for</label><br>
+                <select id="position" name="Position Applied" required>
+                    <option value="">Select position</option>
+                    <option value="frontend developer">Frontend Developer</option>
+                    <option value="full stack developer">Full Stack Developer</option>
+                    <option value="data scientist">Data Scientist</option>
+                    <option value="ml engineer ">ML Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea id="coverletter" name="coverletter" rows="5" placeholder="Explain what makes you suitable for the job.."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
     </div>
     <div id="footer">
         <ul id="footer_links">
